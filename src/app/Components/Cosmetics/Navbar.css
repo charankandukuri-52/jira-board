@@ -1,0 +1,93 @@
+.brandLogo {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.Navbrand img {
+    align-items: center;
+    display: flex;
+    justify-items: center;
+    margin-top: 23px;
+}
+
+.Navbar {
+    background-color: #fff;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.NavMenu {
+
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-items {
+    cursor: pointer;
+    display: flex;
+    gap: 2vw;
+    list-style-type: none;
+    min-width: max-content;
+}
+
+.nav-items li:hover {
+    color: #1868db;
+}
+
+.free-btn {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1868db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.free-btn:hover {
+    background-color: black;
+}
+
+.NavSearch {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+.NavSearch input {
+    display: none;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    border-bottom-color: #1868db;
+}
+
+.user-login {
+    height: 90px;
+    display: flex;
+    margin-right: 3vw;
+    align-items: center;
+}
+
+.user-login .user-sign-in {
+    color: #0052cc;
+}
