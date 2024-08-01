@@ -3,9 +3,10 @@ import '../Cosmetics/Navbar.css'
 import NavItems from '../Data/NavItems'
 import logo from '../../../assets/Atlassian_Logo.png'
 import { FaSearch } from "react-icons/fa";
+import { navLists } from '../Data/NavList';
 
 function Navbar() {
-    const _navItems = new NavItems(['Features', 'Product Guide', 'Templates', 'Pricing', 'Enterprise'])
+    const _navItems = new NavItems(navLists)
     const [navList, setNavList] = React.useState<string[]>(_navItems.getItems())
 
     return (
