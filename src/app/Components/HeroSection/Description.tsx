@@ -11,24 +11,27 @@ function Description({ mainHeading, sideHeading, brandHeading, tagLine }: Descri
 
     return (
         <>
-            <div className="Headings">
-                <div className="mainHeadings">
-                    {mainHeading}
-                </div>
-                <div className="sideHeadings">
-                    {sideHeading}
-                </div>
-                <div className='brandHeadings'>
-                    {brandHeading}
-                    <div className='image-underline'>
-                        <img src={underline} alt="" width={"93px"} />
+            <div className='Descriptions'>
+                <div className="Headings">
+                    <div className="mainHeadings">
+                        {mainHeading}
                     </div>
-                </div>
+                    <div className="sideHeadings">
+                        {sideHeading}
+                    </div>
+                    <div className='brandHeadings'>
+                        {brandHeading}
+                        <div className='image-underline'>
+                            <img src={underline} alt="" width={"93px"} />
+                        </div>
+                    </div>
 
+                </div>
+                <div className='tagLine'>
+                    {tagLine}
+                </div>
             </div>
-            <div className='tagLine'>
-                {tagLine}
-            </div>
+
         </>
     )
 }
