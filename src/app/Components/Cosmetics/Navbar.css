@@ -51,7 +51,7 @@
     color: #fff;
     padding: 10px;
     border: none;
-    border-radius: 25px;
+    border-radius: 40px;
     cursor: pointer;
     padding-left: 20px;
     padding-right: 20px;
@@ -64,21 +64,14 @@
 .NavSearch {
     height: 90px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 20px
 }
 
-.NavSearch input {
-    display: none;
-    padding: 20px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    outline: none;
-    border-bottom-color: #1868db;
+
+.search-icon {
+    cursor: pointer;
 }
 
 .user-login {
@@ -86,8 +79,17 @@
     display: flex;
     margin-right: 3vw;
     align-items: center;
+    justify-content: space-evenly;
+}
+
+.user-login .divider {
+    height: 30%;
+    width: 2px;
+    background-color: #dfe1e5;
+    margin-right: 20px;
 }
 
 .user-login .user-sign-in {
     color: #0052cc;
+    font-size: 12px;
 }
