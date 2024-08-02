@@ -16,3 +16,17 @@
 .free-btn:hover {
     background-color: black;
 }
+
+.display-cards {
+    height: 496px;
+    min-width: 296px;
+    border-radius: 22px;
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.display-cards:hover {
+    transform: translateY(-10px);
+
+    cursor: pointer;
+}
