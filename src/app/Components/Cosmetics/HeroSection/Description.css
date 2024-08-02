@@ -1,0 +1,21 @@
+.Headings {
+    display: flex;
+    gap: 10px;
+}
+
+.mainHeadings {
+    font-size: 66px;
+    font-weight: 700;
+}
+
+.sideHeadings {
+    font-size: 66px;
+}
+
+.brandHeadings {
+    font-size: 66px;
+}
+
+.image-underline {
+    margin-top: -55%;
+}

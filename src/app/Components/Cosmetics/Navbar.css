@@ -92,4 +92,5 @@
 .user-login .user-sign-in {
     color: #0052cc;
     font-size: 12px;
+    cursor: pointer;
 }
