@@ -1,41 +1,49 @@
 .brandLogo {
-    height: 90px;
+    background-color: #1868db;
+    width: 90px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: black;
 }
 
-.Navbrand img {
-    align-items: center;
-    display: flex;
-    justify-items: center;
-    margin-top: 23px;
-}
+
 
 .Navbar {
     background-color: #fff;
     width: 100vw;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 
 }
 
 .NavMenu {
 
     height: 90px;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
+
 
 }
 
 .nav-items {
+
     cursor: pointer;
-    display: flex;
-    gap: 2vw;
+    display: inline-flex;
+    gap: 7vw;
     list-style-type: none;
     min-width: max-content;
+}
+
+.nav-list {
+    display: flex;
+    gap: 3vw;
+    margin-top: 7px;
 }
 
 .nav-items li:hover {

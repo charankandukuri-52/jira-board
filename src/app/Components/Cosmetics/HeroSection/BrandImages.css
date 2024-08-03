@@ -1,0 +1,24 @@
+.brandImages {
+    background-color: #f4f5f7;
+    height: 237px;
+    width: 100vw;
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+
+}
+
+.BrandLogos {
+    opacity: .7;
+    height: 86px;
+    width: 85%;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 9%;
+}
+
+.Brand1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

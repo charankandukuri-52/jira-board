@@ -8,7 +8,7 @@
     justify-content: center;
     background-color: #1868db;
     color: #fff;
-    padding-top: 10px;
+    padding-top: 100px;
     padding-bottom: 10px;
     border: none;
     border-radius: 40px;
@@ -21,16 +21,61 @@
     background-color: #123263;
 }
 
+.cards {
+    display: flex;
+    gap: 1pc;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow-x: auto;
+    max-width: fit-content;
+    padding-top: 4pc;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .display-cards {
+
     height: 496px;
     min-width: 296px;
     border-radius: 22px;
     background-color: #fff;
     transition: all .3s ease-in-out;
+    text-align: left;
 }
 
 .display-cards:hover {
     transform: translateY(-10px);
-
     cursor: pointer;
+}
+
+.display-cards .groupDesc {
+    padding-inline-start: 34px;
+    padding-block-start: 29px;
+    letter-spacing: .24px;
+    font-style: normal;
+    font-size: 9pt;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
+    cursor: pointer;
+    color: rgb(16, 18, 20);
+}
+
+.display-cards .groupDomain {
+    hyphens: auto;
+    padding-block-start: auto;
+    padding-inline-start: 34px;
+    line-height: 30px;
+    font-size: 24px;
+    height: 67px;
+    width: 70%;
+    word-wrap: break-word;
+    font-weight: 700;
+    justify-content: space-between;
+    text-align: left;
+    cursor: pointer;
+    color: rgb(16, 18, 20);
 }

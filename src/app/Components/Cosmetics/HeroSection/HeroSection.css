@@ -1,6 +1,8 @@
 .page-renders {
+    margin-top: 90px;
     height: 90vh;
     width: 100vw;
     display: grid;
     place-items: center;
+
 }
