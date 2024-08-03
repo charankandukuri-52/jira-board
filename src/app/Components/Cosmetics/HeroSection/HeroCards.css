@@ -1,5 +1,5 @@
-.free-btn {
-
+.free-btns {
+    margin-top: 64px;
     display: inline-flex;
     align-items: center;
     font-weight: 500;
@@ -8,7 +8,7 @@
     justify-content: center;
     background-color: #1868db;
     color: #fff;
-    padding-top: 100px;
+    padding-top: 10px;
     padding-bottom: 10px;
     border: none;
     border-radius: 40px;
@@ -17,11 +17,12 @@
     padding-right: 24px;
 }
 
-.free-btn:hover {
+.free-btns:hover {
     background-color: #123263;
 }
 
 .cards {
+    margin-top: 64px;
     display: flex;
     gap: 1pc;
     margin-inline-start: auto;

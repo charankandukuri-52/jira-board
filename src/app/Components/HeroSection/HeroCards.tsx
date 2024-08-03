@@ -8,8 +8,8 @@ function HeroCards() {
     const [cardsData, setCardsData] = useState<{ [key: string]: any }[]>(_cardData.getItems())
     return (
         <>
-            <div className='Free-btn'>
-                <button className='free-btn'> <h2>Get Jira  Free</h2></button>
+            <div className='Free-btns'>
+                <button className='free-btns'> <h2>Get Jira  Free</h2></button>
             </div>
             <div className='cards'>
                 {
