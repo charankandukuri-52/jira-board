@@ -8,13 +8,10 @@
     justify-content: center;
     background-color: #1868db;
     color: #fff;
-    padding-top: 10px;
-    padding-bottom: 10px;
     border: none;
     border-radius: 40px;
     cursor: pointer;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 10px 24px;
 }
 
 .free-btns:hover {

@@ -1,10 +1,20 @@
-import './HeroCardsItems'
+import './HeroImages';
+
+interface HeroCardItem {
+    id: string;
+    Group: string;
+    department: string;
+    image: string;
+}
+
 export default class HeroCardItems {
-    private heroCardItems: { [key: string]: any }[]
-    constructor(items: { [key: string]: any }[]) {
-        this.heroCardItems = items
+    private heroCardItems: HeroCardItem[];
+
+    constructor(items: HeroCardItem[]) {
+        this.heroCardItems = items;
     }
-    getItems(): { [key: string]: any }[] {
+
+    getItems(): HeroCardItem[] {
         return this.heroCardItems;
     }
-} 
+}
