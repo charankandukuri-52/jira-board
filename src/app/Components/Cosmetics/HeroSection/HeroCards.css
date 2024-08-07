@@ -38,7 +38,7 @@
 }
 
 .display-cards {
-
+    overflow: hidden;
     height: 496px;
     min-width: 296px;
     border-radius: 22px;
@@ -79,4 +79,30 @@
     text-align: left;
     cursor: pointer;
     color: rgb(16, 18, 20);
+}
+.display-cards .groupImages {
+
+    position: relative;
+}
+.display-cards .groupImages img {
+    inset-block-end: 0;
+    position: absolute;
+    margin-inline-start: 34px;
+    box-sizing: border-box;
+    margin-top: 35px;
+    margin-left: 100px;
+    aspect-ratio: auto;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 22px;
+    cursor: pointer;
+    display: block;
+
+
+}
+.display-cards .groupImages .svgs {
+    transition: 400ms;
+}
+.display-cards .groupImages .path {
+    fill: rgb(255, 169, 0);
 }

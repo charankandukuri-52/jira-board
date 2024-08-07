@@ -1,4 +1,5 @@
 export default class NavItems {
+
     private _navItems: string[]
     constructor(items: string[]) {
         this._navItems = items;
@@ -6,4 +7,4 @@ export default class NavItems {
     getItems(): string[] {
         return this._navItems;
     }
-} 
+}

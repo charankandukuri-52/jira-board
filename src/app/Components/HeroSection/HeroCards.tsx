@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import '../Cosmetics/HeroSection/HeroCards.css'
 import HeroCardItems from '../Data/HeroCards'
-import { HeroCardList } from '../Data/HeroCardsItems'
+import {HeroImages} from "../Data/HeroImages.ts";
 
 function HeroCards() {
-    const _cardData = new HeroCardItems(HeroCardList)
+
+    const _cardData = new HeroCardItems(HeroImages)
     const [cardsData, setCardsData] = useState<{ [key: string]: any }[]>(_cardData.getItems())
     return (
         <>
@@ -20,7 +21,12 @@ function HeroCards() {
                                 {element.Group}
                             </div>
                             <div className='groupDomain'>
-                                {element.Domain}
+                                {element.department}
+                            </div>
+
+                            <div className='groupImages'>
+
+                                <img src={element.image} alt="" width={"227px"} height={"364px"}/>
                             </div>
                         </div>
                     )
