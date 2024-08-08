@@ -1,17 +1,17 @@
 .free-btns {
-    margin-top: 64px;
+    margin-top: 4rem; /* 64px / 16px = 4rem */
     display: inline-flex;
     align-items: center;
     font-weight: 500;
-    min-height: 44px;
-    min-width: 90pt;
+    min-height: 2.75rem; /* 44px / 16px = 2.75rem */
+    min-width: 5.625rem; /* 90px / 16px = 5.625rem */
     justify-content: center;
     background-color: #1868db;
     color: #fff;
     border: none;
-    border-radius: 40px;
+    border-radius: 2.5rem; /* 40px / 16px = 2.5rem */
     cursor: pointer;
-    padding: 10px 24px;
+    padding: 0.625rem 1.5rem; /* 10px / 16px = 0.625rem; 24px / 16px = 1.5rem */
 }
 
 .free-btns:hover {
@@ -19,16 +19,16 @@
 }
 
 .cards {
-    margin-top: 64px;
+    margin-top: 4rem; /* 64px / 16px = 4rem */
     display: flex;
-    gap: 1pc;
+    gap: 0.75rem; /* 12px / 16px = 0.75rem (assuming 1pc = 16px) */
     margin-inline-start: auto;
     margin-inline-end: auto;
     overflow-x: auto;
     max-width: fit-content;
-    padding-top: 4pc;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 2.5rem; /* 40px / 16px = 2.5rem (assuming 1pc = 16px) */
+    padding-left: 0.625rem; /* 10px / 16px = 0.625rem */
+    padding-right: 0.625rem; /* 10px / 16px = 0.625rem */
     justify-content: flex-start;
     width: 100%;
     box-sizing: border-box;
@@ -36,25 +36,25 @@
 
 .display-cards {
     overflow: hidden;
-    height: 496px;
-    min-width: 296px;
-    border-radius: 22px;
+    height: 31rem; /* 496px / 16px = 31rem */
+    min-width: 18.5rem; /* 296px / 16px = 18.5rem */
+    border-radius: 1.375rem; /* 22px / 16px = 1.375rem */
     background-color: #fff;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     text-align: left;
 }
 
 .display-cards:hover {
-    transform: translateY(-10px);
+    transform: translateY(-0.625rem); /* 10px / 16px = 0.625rem */
     cursor: pointer;
 }
 
 .display-cards .groupDesc {
-    padding-inline-start: 34px;
-    padding-block-start: 29px;
-    letter-spacing: .24px;
+    padding-inline-start: 2.125rem; /* 34px / 16px = 2.125rem */
+    padding-block-start: 1.8125rem; /* 29px / 16px = 1.8125rem */
+    letter-spacing: 0.015rem; /* 0.24px / 16px = 0.015rem */
     font-style: normal;
-    font-size: 9pt;
+    font-size: 0.5625rem; /* 9pt = 9px; 9px / 16px = 0.5625rem */
     font-weight: 400;
     text-transform: uppercase;
     text-align: left;
@@ -65,10 +65,10 @@
 .display-cards .groupDomain {
     hyphens: auto;
     padding-block-start: auto;
-    padding-inline-start: 34px;
-    line-height: 30px;
-    font-size: 24px;
-    height: 67px;
+    padding-inline-start: 2.125rem; /* 34px / 16px = 2.125rem */
+    line-height: 1.875rem; /* 30px / 16px = 1.875rem */
+    font-size: 1.5rem; /* 24px / 16px = 1.5rem */
+    height: 4.1875rem; /* 67px / 16px = 4.1875rem */
     width: 70%;
     word-wrap: break-word;
     font-weight: 700;
@@ -77,29 +77,30 @@
     cursor: pointer;
     color: rgb(16, 18, 20);
 }
-.display-cards .groupImages {
 
+.display-cards .groupImages {
     position: relative;
 }
+
 .display-cards .groupImages img {
     inset-block-end: 0;
     position: absolute;
-    margin-inline-start: 34px;
+    margin-inline-start: 2.125rem; /* 34px / 16px = 2.125rem */
     box-sizing: border-box;
-    margin-top: 35px;
-    margin-left: 100px;
+    margin-top: 2.1875rem; /* 35px / 16px = 2.1875rem */
+    margin-left: 6.25rem; /* 100px / 16px = 6.25rem */
     aspect-ratio: auto;
     object-fit: cover;
     object-position: left;
-    border-radius: 22px;
+    border-radius: 1.375rem; /* 22px / 16px = 1.375rem */
     cursor: pointer;
     display: block;
-
-
 }
+
 .display-cards .groupImages .svgs {
     transition: 400ms;
 }
+
 .display-cards .groupImages .path {
     fill: rgb(255, 169, 0);
 }
