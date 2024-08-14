@@ -4,6 +4,7 @@ import HeroCards from "./HeroCards"
 import BrandImages from "./BrandsAgreement"
 import DailyTasks from "./daily-tasks.tsx";
 import ActionButtons from "./action-buttons.tsx";
+import AISection from "./AI.tsx";
 function HeroSection() {
     return (
         <>
@@ -20,6 +21,7 @@ function HeroSection() {
                 <BrandImages />
                 <DailyTasks/>
                 <ActionButtons/>
+                <AISection/>
             </div>
         </>
     )
