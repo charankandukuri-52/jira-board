@@ -2,6 +2,8 @@ import Description from "./Description"
 import '../Cosmetics/HeroSection/HeroSection.css'
 import HeroCards from "./HeroCards"
 import BrandImages from "./BrandsAgreement"
+import DailyTasks from "./daily-tasks.tsx";
+import ActionButtons from "./action-buttons.tsx";
 function HeroSection() {
     return (
         <>
@@ -16,6 +18,8 @@ function HeroSection() {
                     <HeroCards />
                 </div>
                 <BrandImages />
+                <DailyTasks/>
+                <ActionButtons/>
             </div>
         </>
     )

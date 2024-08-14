@@ -1,0 +1,23 @@
+.daily-tasks__item {
+    display: flex;
+
+    width: 100vw;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin: 0 32px;
+    padding: 50px 0;
+}
+.title {
+
+    line-height: 56px;
+    font-size: 3pc;
+    font-weight: 700;
+    text-align: center;
+
+}
+.daily-tasks__item img {
+    margin-bottom: 30px;
+    transform: rotate(3.234deg);
+}
+
