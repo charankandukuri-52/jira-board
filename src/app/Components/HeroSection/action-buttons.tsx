@@ -34,20 +34,28 @@ function ActionButtons() {
                         <div className='Infodesc'>
                             {
                                 buttonData.map((item, index) => (
-                                    <div>
-                                        <h2 className={index === currentIndex? 'item-title-font': 'item-title'} key={index}>{item.title}</h2>
-                                        <div className='descImage'>
-
+                                    <button className='item-desc' onClick={() => setCurrentIndex(index)}>
+                                        <div>
                                             {
                                                 index === currentIndex && <div className='progress'>
                                                     <div className='progress-bar'></div>
                                                 </div>
                                             }
+
+                                        </div>
+                                        <div>
+                                            <h2 className={index === currentIndex ? 'item-title-font' : 'item-title'}
+                                                key={index}>{item.title}</h2>
+
                                             <p className='item-desc'
                                                key={index}>{currentIndex === index ? currentItem.description : ''}{}</p>
+
+
                                         </div>
 
-                                    </div>
+
+
+                                    </button>
                                 ))
                             }
                         </div>
