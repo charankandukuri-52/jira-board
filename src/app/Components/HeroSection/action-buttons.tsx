@@ -14,12 +14,9 @@ function ActionButtons() {
     const buttonData = _buttonData.getTasks();
 
     useEffect(() => {
-        // Set up the interval to change the index every 5 seconds
         const intervalId = setInterval(() => {
             setCurrentIndex(prevIndex => (prevIndex + 1) % buttonData.length);
         }, 5000);
-
-        // Clean up the interval on component unmount
         return () => clearInterval(intervalId);
     }, [buttonData.length]);
 
@@ -35,7 +32,7 @@ function ActionButtons() {
                             {
                                 buttonData.map((item, index) => (
                                     <button className='item-desc' onClick={() => setCurrentIndex(index)}>
-                                        <div>
+                                        <div key={index}>
                                             {
                                                 index === currentIndex && <div className='progress'>
                                                     <div className='progress-bar'></div>
@@ -43,7 +40,7 @@ function ActionButtons() {
                                             }
 
                                         </div>
-                                        <div>
+                                        <div key={index}>
                                             <h2 className={index === currentIndex ? 'item-title-font' : 'item-title'}
                                                 key={index}>{item.title}</h2>
 

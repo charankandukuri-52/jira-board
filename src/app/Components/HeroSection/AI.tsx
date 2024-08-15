@@ -36,23 +36,23 @@ function AISection() {
                         <defs>
                             <linearGradient id="paint0_linear_2487_5195" x1="47.1571" y1="23.8756" x2="38.1517"
                                             y2="23.8756" gradientUnits="userSpaceOnUse">
-                                <stop offset="0.270833" stop-color="#9BC6FF"></stop>
-                                <stop offset="1" stop-color="white"></stop>
+                                <stop offset="0.270833" stopColor="#9BC6FF"></stop>
+                                <stop offset="1" stopColor="white"></stop>
                             </linearGradient>
                             <linearGradient id="paint1_linear_2487_5195" x1="25.2872" y1="0.718933" x2="25.2872"
                                             y2="9.72432" gradientUnits="userSpaceOnUse">
-                                <stop offset="0.1875" stop-color="#9BC6FF"></stop>
-                                <stop offset="1" stop-color="white"></stop>
+                                <stop offset="0.1875" stopColor="#9BC6FF"></stop>
+                                <stop offset="1" stopColor="white"></stop>
                             </linearGradient>
                             <linearGradient id="paint2_linear_2487_5195" x1="10.6981" y1="23.8756" x2="1.69272"
                                             y2="23.8756" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="white"></stop>
-                                <stop offset="0.791667" stop-color="#2684FF"></stop>
+                                <stop stopColor="white"></stop>
+                                <stop offset="0.791667" stopColor="#2684FF"></stop>
                             </linearGradient>
                             <linearGradient id="paint3_linear_2487_5195" x1="25.2872" y1="36.7404" x2="25.2872"
                                             y2="47.0323" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="white"></stop>
-                                <stop offset="0.802083" stop-color="#A6CCFE"></stop>
+                                <stop stopColor="white"></stop>
+                                <stop offset="0.802083" stopColor="#A6CCFE"></stop>
                             </linearGradient>
                         </defs>
                     </svg>
