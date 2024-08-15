@@ -1,11 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import '../Cosmetics/Navbar.css'
 import NavItems from '../Data/NavItems'
 import { navLists } from '../Data/NavList';
 
 function Navbar() {
     const _navItems = new NavItems(navLists)
-    const [navList, setNavList] = React.useState<string[]>(_navItems.getItems())
+    const [navList, setNavList] = React.useState<string[]>([])
+    useEffect(()=> {
+        setNavList(_navItems.getItems())
+    },[])
 
     return (
         <>
