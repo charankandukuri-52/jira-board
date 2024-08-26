@@ -1,34 +1,44 @@
+:root {
+    --primary-color: #1868db;
+    --hover-color: #123263;
+    --dark-color: rgb(16, 18, 20);
+    --accent-color: rgb(255, 169, 0);
+    --border-radius: 1.375rem;
+    --padding-inline: 2.125rem;
+    --font-size-small: 0.5625rem;
+    --font-size-large: 1.5rem;
+}
+
+
 .free-btns {
-    margin-top: 4rem; /* 64px / 16px = 4rem */
+    margin-top: 4rem;
     display: inline-flex;
     align-items: center;
     font-weight: 500;
-    min-height: 2.75rem; /* 44px / 16px = 2.75rem */
-    min-width: 5.625rem; /* 90px / 16px = 5.625rem */
+    min-height: 2.75rem;
+    min-width: 5.625rem;
     justify-content: center;
-    background-color: #1868db;
+    background-color: var(--primary-color);
     color: #fff;
     border: none;
-    border-radius: 2.5rem; /* 40px / 16px = 2.5rem */
+    border-radius: 2.5rem;
     cursor: pointer;
-    padding: 0.625rem 1.5rem; /* 10px / 16px = 0.625rem; 24px / 16px = 1.5rem */
+    padding: 0.625rem 1.5rem;
+    transition: background-color 0.3s ease;
 }
 
 .free-btns:hover {
-    background-color: #123263;
+    background-color: var(--hover-color);
 }
 
 .cards {
-    margin-top: 4rem; /* 64px / 16px = 4rem */
+    margin-top: 4rem;
     display: flex;
-    gap: 0.75rem; /* 12px / 16px = 0.75rem (assuming 1pc = 16px) */
-    margin-inline-start: auto;
-    margin-inline-end: auto;
+    gap: 0.75rem;
+    margin-inline: auto;
     overflow-x: auto;
     max-width: fit-content;
-    padding-top: 2.5rem; /* 40px / 16px = 2.5rem (assuming 1pc = 16px) */
-    padding-left: 0.625rem; /* 10px / 16px = 0.625rem */
-    padding-right: 0.625rem; /* 10px / 16px = 0.625rem */
+    padding: 2.5rem 0.625rem 0 0.625rem;
     justify-content: flex-start;
     width: 100%;
     box-sizing: border-box;
@@ -36,46 +46,38 @@
 
 .display-cards {
     overflow: hidden;
-    height: 31rem; /* 496px / 16px = 31rem */
-    min-width: 18.5rem; /* 296px / 16px = 18.5rem */
-    border-radius: 1.375rem; /* 22px / 16px = 1.375rem */
+    height: 31rem;
+    min-width: 18.5rem;
+    border-radius: var(--border-radius);
     background-color: #fff;
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     text-align: left;
 }
 
 .display-cards:hover {
-    transform: translateY(-0.625rem); /* 10px / 16px = 0.625rem */
+    transform: translateY(-0.625rem);
     cursor: pointer;
 }
 
 .display-cards .groupDesc {
-    padding-inline-start: 2.125rem; /* 34px / 16px = 2.125rem */
-    padding-block-start: 1.8125rem; /* 29px / 16px = 1.8125rem */
-    letter-spacing: 0.015rem; /* 0.24px / 16px = 0.015rem */
-    font-style: normal;
-    font-size: 0.5625rem; /* 9pt = 9px; 9px / 16px = 0.5625rem */
+    padding-inline-start: var(--padding-inline);
+    padding-block-start: 1.8125rem;
+    letter-spacing: 0.015rem;
+    font-size: var(--font-size-small);
     font-weight: 400;
     text-transform: uppercase;
-    text-align: left;
-    cursor: pointer;
-    color: rgb(16, 18, 20);
+    color: var(--dark-color);
 }
 
 .display-cards .groupDomain {
-    hyphens: auto;
-    padding-block-start: auto;
-    padding-inline-start: 2.125rem; /* 34px / 16px = 2.125rem */
-    line-height: 1.875rem; /* 30px / 16px = 1.875rem */
-    font-size: 1.5rem; /* 24px / 16px = 1.5rem */
-    height: 4.1875rem; /* 67px / 16px = 4.1875rem */
+    padding-inline-start: var(--padding-inline);
+    line-height: 1.875rem;
+    font-size: var(--font-size-large);
+    height: 4.1875rem;
     width: 70%;
     word-wrap: break-word;
     font-weight: 700;
-    justify-content: space-between;
-    text-align: left;
-    cursor: pointer;
-    color: rgb(16, 18, 20);
+    color: var(--dark-color);
 }
 
 .display-cards .groupImages {
@@ -85,15 +87,11 @@
 .display-cards .groupImages img {
     inset-block-end: 0;
     position: absolute;
-    margin-inline-start: 2.125rem; /* 34px / 16px = 2.125rem */
-    box-sizing: border-box;
-    margin-top: 2.1875rem; /* 35px / 16px = 2.1875rem */
-    margin-left: 6.25rem; /* 100px / 16px = 6.25rem */
+    margin: 2.1875rem 0 0 6.25rem;
     aspect-ratio: auto;
     object-fit: cover;
     object-position: left;
-    border-radius: 1.375rem; /* 22px / 16px = 1.375rem */
-    cursor: pointer;
+    border-radius: var(--border-radius);
     display: block;
 }
 
@@ -102,5 +100,5 @@
 }
 
 .display-cards .groupImages .path {
-    fill: rgb(255, 169, 0);
+    fill: var(--accent-color);
 }
